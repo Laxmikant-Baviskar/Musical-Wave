@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.container > div {
+  width: 10px;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    #13f1fc -7.67%,
+    #04b2f4 40.97%,
+    #0470dc 84.81%
+  );
+  margin-left: 10px;
+  border-radius: 20px;
+  animation: wave 1.5s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleY(0.1);
+  }
+  50% {
+    transform: scaleY(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleY(0.1);
+    opacity: 0;
+  }
+}
+div .one {
+  animation-delay: 0.3s;
+}
+div .two {
+  animation-delay: 0.6s;
+}
+div .three {
+  animation-delay: 0.9s;
+}
+div .four {
+  animation-delay: 1.2s;
+}
+div .five {
+  animation-delay: 1.5s;
+}
+div .six {
+  animation-delay: 1.8s;
+}
+div .seven {
+  animation-delay: 2.1s;
+}
